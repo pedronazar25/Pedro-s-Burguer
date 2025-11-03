@@ -11,10 +11,11 @@
 		<a href="/">
 			<img src="logo.png">
 		</a>
-		<a href="javascript:mostraMenu();">
+		<a href="javascript:mostrarMenu();">
 			<img src="menu.png">
 		</a>
 		<nav id= "menu" class="esconder">
+			<a href="javascript:mostrarMenu();" class="fecharMenu">x</a>
 			<ul>
 				<li><a href="">Inicio</a></li>
 				<li><a href="">Lanches</a></li
@@ -26,11 +27,22 @@
 			</nav>
 
 			<script>
-				function mostraMenu(){
+				function mostrarMenu(){
 					const menu = document.getElementById('menu');
 					menu.classList.toggle('ativo');
 				}
 			</script>
 	</header>
+	<main>
+		<div class="container">
+			<div class="destaque">
+				<img src="">
+				<div class="link">
+					<a href="">Combo Especial</a>
+					<a href="">Combo Kids</a>
+				</div>
+			</div>
+		</div>
+	</main>
 </body>
-</html>
+</html> 
