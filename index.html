@@ -3,46 +3,64 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Pufe Burger</title>
+
 	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<title>Pufe Burger</title>
 </head>
 <body>
 	<header>
 		<a href="/">
 			<img src="logo.png">
 		</a>
-		<a href="javascript:mostrarMenu();">
+		<a href="javascript:mostraMenu();">
 			<img src="menu.png">
 		</a>
-		<nav id= "menu" class="esconder">
-			<a href="javascript:mostrarMenu();" class="fecharMenu">x</a>
+
+		<nav id="menu" class="esconder">
+			<a href="javascript:mostraMenu();" class="fecharMenu">x</a>
 			<ul>
 				<li><a href="">Inicio</a></li>
-				<li><a href="">Lanches</a></li
-				>
-				<li><a href="">Bebidas</a></li
-				>
+				<li><a href="">Lanches</a></li>
+				<li><a href="">Bebidas</a></li>
 				<li><a href="">Combos</a></li>
-				</ul>
-			</nav>
+			</ul>
+		</nav>
 
-			<script>
-				function mostrarMenu(){
-					const menu = document.getElementById('menu');
-					menu.classList.toggle('ativo');
-				}
-			</script>
+		<script>
+			  function mostraMenu() {
+			    const menu = document.getElementById('menu');
+			    menu.classList.toggle('ativo');
+			  }
+		</script>
+
 	</header>
 	<main>
 		<div class="container">
 			<div class="destaque">
-				<img src="">
-				<div class="link">
+				<div class="imagem-destaque">
+					<img src="https://www.sabornamesa.com.br/media/k2/items/cache/bf1e20a4462b71e3cc4cece2a8c96ac8_XL.jpg">
+				</div>
+				<div class="links">
 					<a href="">Combo Especial</a>
 					<a href="">Combo Kids</a>
 				</div>
 			</div>
 		</div>
+		<div class="popular">
+			<h2>Popular</h2>
+			<ul>
+				<li>
+					<div class="imagem-destaque">
+						<img src=">
+					</div>
+					<div class="descricao">
+						<h3>X - Vina</h3>
+						<p> The best burger recipe for summertime grilling!</p>
+						<a href="#">Pedir</a>
+					</div>
+				</li>
+			</ul>
 	</main>
 </body>
-</html> 
+</html>
